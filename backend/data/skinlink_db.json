@@ -1,0 +1,2246 @@
+{
+  "db": {
+    "tenants": [
+      {
+        "id": "t_mwanza",
+        "name": "Mwanza Regional Health Network",
+        "slug": "mwanza-health",
+        "plan": "growth",
+        "status": "active",
+        "country": "Tanzania",
+        "region": "Mwanza",
+        "contactName": "Dr. Amina Hassan",
+        "contactEmail": "amina@mwanzahealth.org",
+        "seats": 25,
+        "usedSeats": 14,
+        "clinics": 8,
+        "createdAt": "2026-01-16T07:37:25.308256+00:00",
+        "primaryColor": "#1f7a8c"
+      },
+      {
+        "id": "t_mtwara",
+        "name": "Mtwara Coastal Clinics",
+        "slug": "mtwara-coastal",
+        "plan": "pilot",
+        "status": "trial",
+        "country": "Tanzania",
+        "region": "Mtwara",
+        "contactName": "Joseph Mbwana",
+        "contactEmail": "joseph@mtwaracoastal.org",
+        "seats": 10,
+        "usedSeats": 4,
+        "clinics": 3,
+        "createdAt": "2026-07-07T07:37:25.308256+00:00",
+        "primaryColor": "#0c6b58"
+      }
+    ],
+    "users": [
+      {
+        "id": "u_platform",
+        "tenantId": null,
+        "name": "SkinLink Operator",
+        "email": "ops@skinlink.io",
+        "role": "platform_admin",
+        "title": "Platform Administrator",
+        "status": "active",
+        "avatarColor": "#0c2340",
+        "lastActive": "2026-08-14T06:37:25.308256+00:00",
+        "createdAt": "2025-04-01T07:37:25.308256+00:00"
+      },
+      {
+        "id": "u_amina",
+        "tenantId": "t_mwanza",
+        "name": "Dr. Amina Hassan",
+        "email": "amina@mwanzahealth.org",
+        "role": "org_admin",
+        "title": "Lead Dermatologist",
+        "specialty": "General Dermatology",
+        "phone": "+255 754 100 100",
+        "status": "active",
+        "avatarColor": "#1f7a8c",
+        "lastActive": "2026-08-14T05:37:25.308256+00:00",
+        "createdAt": "2026-01-16T07:37:25.308256+00:00"
+      },
+      {
+        "id": "u_daniel",
+        "tenantId": "t_mwanza",
+        "name": "Dr. Daniel Okoth",
+        "email": "daniel@mwanzahealth.org",
+        "role": "specialist",
+        "title": "Dermatologist",
+        "specialty": "Pediatric Dermatology",
+        "status": "active",
+        "avatarColor": "#2b4c7e",
+        "lastActive": "2026-08-14T02:37:25.308256+00:00",
+        "createdAt": "2026-02-15T07:37:25.308256+00:00"
+      },
+      {
+        "id": "u_neema",
+        "tenantId": "t_mwanza",
+        "name": "Neema Joseph",
+        "email": "neema@mwanzahealth.org",
+        "role": "clinician",
+        "title": "Community Health Worker",
+        "phone": "+255 754 100 102",
+        "status": "active",
+        "avatarColor": "#0c6b58",
+        "lastActive": "2026-08-13T22:37:25.308256+00:00",
+        "createdAt": "2026-03-17T07:37:25.308256+00:00"
+      },
+      {
+        "id": "u_joseph",
+        "tenantId": "t_mtwara",
+        "name": "Joseph Mbwana",
+        "email": "joseph@mtwaracoastal.org",
+        "role": "org_admin",
+        "title": "Clinic Coordinator",
+        "status": "active",
+        "avatarColor": "#0c6b58",
+        "lastActive": "2026-08-13T11:37:25.308256+00:00",
+        "createdAt": "2026-07-07T07:37:25.308256+00:00"
+      }
+    ],
+    "patients": [
+      {
+        "id": "p_ed7416ae",
+        "tenantId": "t_mwanza",
+        "code": "PT-0009",
+        "createdAt": "2026-08-18T05:29:33.690188+00:00",
+        "registeredById": "u_neema",
+        "fullName": "mussa kimawa",
+        "age": 28,
+        "gender": "Male",
+        "village": "Kilimanjaro",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_7eecfaf1",
+        "tenantId": "t_mwanza",
+        "code": "PT-0008",
+        "createdAt": "2026-08-17T09:38:30.617515+00:00",
+        "registeredById": "u_neema",
+        "village": "Test",
+        "fullName": "Test Dedup",
+        "consentObtained": true,
+        "age": 32,
+        "gender": "Male"
+      },
+      {
+        "id": "p_b5a1ee11",
+        "tenantId": "t_mwanza",
+        "code": "PT-0007",
+        "createdAt": "2026-08-17T09:35:51.227032+00:00",
+        "registeredById": "u_neema",
+        "fullName": "anet muddy",
+        "age": 28,
+        "gender": "Female",
+        "village": "Arusha",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_3aed36d0",
+        "tenantId": "t_mwanza",
+        "code": "PT-0006",
+        "createdAt": "2026-08-17T09:35:43.881755+00:00",
+        "registeredById": "u_neema",
+        "fullName": "anet muddy",
+        "age": 28,
+        "gender": "Female",
+        "village": "Arusha",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_58f0defc",
+        "tenantId": "t_mwanza",
+        "code": "PT-0005",
+        "createdAt": "2026-08-17T09:06:26.952620+00:00",
+        "registeredById": "u_neema",
+        "fullName": "amili amini",
+        "age": 28,
+        "gender": "Male",
+        "village": "Kilimanjaro",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_e7bb5f93",
+        "tenantId": "t_mwanza",
+        "code": "PT-0004",
+        "createdAt": "2026-08-15T09:47:15.733766+00:00",
+        "registeredById": "u_neema",
+        "fullName": "amali abbakari",
+        "age": 25,
+        "gender": "Male",
+        "village": "Mwanza",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_294c90fa",
+        "tenantId": "t_mwanza",
+        "code": "PT-0003",
+        "createdAt": "2026-08-14T08:07:53.677423+00:00",
+        "registeredById": "u_neema",
+        "fullName": "Janet Musa",
+        "age": 28,
+        "gender": "Female",
+        "village": "Arusha",
+        "region": "Mwanza",
+        "phone": null,
+        "consentObtained": true
+      },
+      {
+        "id": "p_fatuma",
+        "tenantId": "t_mwanza",
+        "code": "PT-0001",
+        "fullName": "Fatuma K.",
+        "age": 45,
+        "gender": "Female",
+        "phone": "+255 712 000 001",
+        "village": "Mbuyuni",
+        "region": "Mwanza",
+        "consentObtained": true,
+        "registeredById": "u_neema",
+        "createdAt": "2026-08-10T07:37:25.308256+00:00",
+        "notes": "Recurrent itchy patches on forearm."
+      },
+      {
+        "id": "p_juma",
+        "tenantId": "t_mwanza",
+        "code": "PT-0002",
+        "fullName": "Juma A.",
+        "age": 33,
+        "gender": "Male",
+        "village": "Nyakato",
+        "region": "Mwanza",
+        "consentObtained": true,
+        "registeredById": "u_neema",
+        "createdAt": "2026-08-08T07:37:25.308256+00:00"
+      }
+    ],
+    "cases": [
+      {
+        "id": "c_e1a09e15",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1009",
+        "patientId": "p_ed7416ae",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "redness",
+        "clinicalInfo": "i week pain",
+        "durationDays": 6,
+        "suspectedCondition": "dertamadititc",
+        "status": "in_review",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_18ea56fb",
+            "url": "http://127.0.0.1:8000/uploads/50282c62796942368e5e47f4f362f20d.png",
+            "angle": "Overview",
+            "quality": "acceptable",
+            "qualityScore": 67,
+            "qualityNotes": "Uneven lighting or shadow present",
+            "capturedAt": "2026-08-18T05:29:34.185938+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (api-error), model=gpt-4o",
+              "checkedAt": "2026-08-18T05:30:16.809033+00:00",
+              "retakeRequired": false
+            }
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-18T05:29:34.185938+00:00",
+        "updatedAt": "2026-08-18T05:30:19.764611+00:00",
+        "bodySite": "face",
+        "previousTreatment": "none",
+        "redFlags": [],
+        "imageQualityStatus": "passed",
+        "aiImageQuality": {
+          "pass": true,
+          "retake_required": false,
+          "overall_score": 67,
+          "checked_images": 1,
+          "total_images": 1,
+          "per_image": [
+            {
+              "imageId": "img_18ea56fb",
+              "url": "http://127.0.0.1:8000/uploads/50282c62796942368e5e47f4f362f20d.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        },
+        "ai": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-18T05:30:19.764611+00:00"
+        }
+      },
+      {
+        "id": "c_096ca9b1",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1008",
+        "patientId": "p_7eecfaf1",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "Acne flare on cheek",
+        "clinicalInfo": "On chin and cheeks x 1 week no fever",
+        "durationDays": 7,
+        "suspectedCondition": "Awaiting specialist review",
+        "status": "in_review",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_faac5ded",
+            "url": "/uploads/sample/dermatitis.png",
+            "angle": "Close-up",
+            "quality": "acceptable",
+            "qualityScore": 75,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-17T09:38:30.628439+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 75,
+              "issues": [],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+              "checkedAt": "2026-08-17T09:38:33.422168+00:00",
+              "retakeRequired": false
+            }
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-17T09:38:30.628439+00:00",
+        "updatedAt": "2026-08-17T09:38:33.445500+00:00",
+        "bodySite": "Face",
+        "previousTreatment": null,
+        "redFlags": [],
+        "imageQualityStatus": "passed",
+        "aiImageQuality": {
+          "pass": true,
+          "retake_required": false,
+          "overall_score": 75,
+          "checked_images": 1,
+          "total_images": 1,
+          "per_image": [
+            {
+              "imageId": "img_faac5ded",
+              "url": "/uploads/sample/dermatitis.png",
+              "angle": "Close-up",
+              "rating": "acceptable",
+              "score": 75,
+              "issues": [],
+              "retakeRequired": false
+            }
+          ]
+        },
+        "ai": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 75
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Acne Vulgaris (inflammatory)",
+              "likelihood": "probable",
+              "probability": 82,
+              "rationale": "Inflammatory papules/pustules consistent with acne distribution."
+            },
+            {
+              "condition": "Folliculitis",
+              "likelihood": "possible",
+              "probability": 38,
+              "rationale": "Follicular-based pustules possible; differentiate by distribution."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+          "generated_at": "2026-08-17T09:38:33.445500+00:00"
+        }
+      },
+      {
+        "id": "c_69edc654",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1007",
+        "patientId": "p_fatuma",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "Rash on wrist",
+        "clinicalInfo": "Mild itching 3 days",
+        "durationDays": 3,
+        "suspectedCondition": "Awaiting specialist review",
+        "status": "in_review",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_0cb0f3a7",
+            "url": "/uploads/sample/eczema-close-up.png",
+            "angle": "Close-up",
+            "quality": "acceptable",
+            "qualityScore": 65,
+            "qualityNotes": "Possible motion blur detected \u2014 consider retaking",
+            "capturedAt": "2026-08-17T09:36:11.615460+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+              "checkedAt": "2026-08-17T09:36:11.657085+00:00",
+              "retakeRequired": false
+            }
+          },
+          {
+            "id": "img_ccb3e0e7",
+            "url": "/uploads/sample/arm-wide.png",
+            "angle": "Overview",
+            "quality": "acceptable",
+            "qualityScore": 65,
+            "qualityNotes": "Possible motion blur detected \u2014 consider retaking",
+            "capturedAt": "2026-08-17T09:36:11.615460+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+              "checkedAt": "2026-08-17T09:36:11.658086+00:00",
+              "retakeRequired": false
+            }
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-17T09:36:11.615460+00:00",
+        "updatedAt": "2026-08-17T09:36:11.697557+00:00",
+        "bodySite": "Wrist",
+        "previousTreatment": null,
+        "redFlags": [],
+        "imageQualityStatus": "passed",
+        "aiImageQuality": {
+          "pass": true,
+          "retake_required": false,
+          "overall_score": 65,
+          "checked_images": 2,
+          "total_images": 2,
+          "per_image": [
+            {
+              "imageId": "img_0cb0f3a7",
+              "url": "/uploads/sample/eczema-close-up.png",
+              "angle": "Close-up",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            },
+            {
+              "imageId": "img_ccb3e0e7",
+              "url": "/uploads/sample/arm-wide.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        },
+        "ai": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Possible motion blur detected \u2014 consider retaking"
+            ],
+            "score": 65
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Atopic Dermatitis",
+              "likelihood": "probable",
+              "probability": 76,
+              "rationale": "Itchy erythematous patches in typical flexural distribution pattern."
+            },
+            {
+              "condition": "Allergic Contact Dermatitis",
+              "likelihood": "possible",
+              "probability": 48,
+              "rationale": "Localized pattern could indicate contact allergen exposure."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "moderate",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:11.697557+00:00"
+        }
+      },
+      {
+        "id": "c_d0a98aea",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1006",
+        "patientId": "p_b5a1ee11",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "facial",
+        "clinicalInfo": "patient said , i fee pain",
+        "durationDays": 7,
+        "suspectedCondition": "ai check",
+        "status": "in_review",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_7e9dd191",
+            "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+            "angle": "Overview",
+            "quality": "acceptable",
+            "qualityScore": 67,
+            "qualityNotes": "Uneven lighting or shadow present",
+            "capturedAt": "2026-08-17T09:35:51.265834+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (api-error), model=gpt-4o",
+              "checkedAt": "2026-08-17T09:36:05.267657+00:00",
+              "retakeRequired": false
+            }
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-17T09:35:51.265834+00:00",
+        "updatedAt": "2026-08-17T09:36:08.960008+00:00",
+        "bodySite": "face",
+        "previousTreatment": "non",
+        "redFlags": [
+          "Clinical red flag reported"
+        ],
+        "imageQualityStatus": "passed",
+        "aiImageQuality": {
+          "pass": true,
+          "retake_required": false,
+          "overall_score": 67,
+          "checked_images": 1,
+          "total_images": 1,
+          "per_image": [
+            {
+              "imageId": "img_7e9dd191",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        },
+        "ai": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:08.960008+00:00"
+        }
+      },
+      {
+        "id": "c_fd265f4e",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1005",
+        "patientId": "p_3aed36d0",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "facial",
+        "clinicalInfo": "patient said , i fee pain",
+        "durationDays": 7,
+        "suspectedCondition": "ai check",
+        "status": "in_review",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_51ae346c",
+            "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+            "angle": "Overview",
+            "quality": "acceptable",
+            "qualityScore": 67,
+            "qualityNotes": "Uneven lighting or shadow present",
+            "capturedAt": "2026-08-17T09:35:43.893746+00:00",
+            "aiQualityCheck": {
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "focus": true,
+              "lighting": true,
+              "lesion_visible": true,
+              "required_angles_present": true,
+              "model": "skinlink-fallback (api-error), model=gpt-4o",
+              "checkedAt": "2026-08-17T09:36:06.964468+00:00",
+              "retakeRequired": false
+            }
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-17T09:35:43.893746+00:00",
+        "updatedAt": "2026-08-17T09:36:09.957547+00:00",
+        "bodySite": "face",
+        "previousTreatment": "non",
+        "redFlags": [
+          "Clinical red flag reported"
+        ],
+        "imageQualityStatus": "passed",
+        "aiImageQuality": {
+          "pass": true,
+          "retake_required": false,
+          "overall_score": 67,
+          "checked_images": 1,
+          "total_images": 1,
+          "per_image": [
+            {
+              "imageId": "img_51ae346c",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        },
+        "ai": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:09.957547+00:00"
+        }
+      },
+      {
+        "id": "c_f02e0948",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1004",
+        "patientId": "p_58f0defc",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "facial rush",
+        "clinicalInfo": "patient said i feel pain",
+        "durationDays": 7,
+        "suspectedCondition": "harm",
+        "status": "new",
+        "priority": "urgent",
+        "images": [
+          {
+            "id": "img_a1402572",
+            "url": "http://127.0.0.1:8000/uploads/7ac8ba12ac4f49e9b75525dec33c082d.png",
+            "angle": "Overview",
+            "quality": "good",
+            "qualityScore": 85,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-17T09:06:27.316110+00:00"
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-17T09:06:27.316110+00:00",
+        "updatedAt": "2026-08-18T05:12:12.528609+00:00",
+        "bodySite": "cheeks",
+        "previousTreatment": "none",
+        "redFlags": [
+          "Clinical red flag reported"
+        ],
+        "ai": {
+          "imageQualityAverage": 73,
+          "imageQualityFlags": [
+            "Only one image \u2014 additional angles recommended for confident assessment"
+          ],
+          "differentials": [
+            {
+              "condition": "Nonspecific Dermatitis",
+              "probability": 58,
+              "confidence": "Moderate",
+              "rationale": "Features are nonspecific; correlate clinically."
+            },
+            {
+              "condition": "Fungal Infection (tinea)",
+              "probability": 41,
+              "confidence": "Moderate",
+              "rationale": "Consider if annular/scaly; a skin scraping may help."
+            },
+            {
+              "condition": "Contact Reaction",
+              "probability": 30,
+              "confidence": "Low",
+              "rationale": "Possible localized allergen/irritant exposure."
+            }
+          ],
+          "recommendedAction": "Insufficient specificity \u2014 recommend additional well-lit images and clinical correlation.",
+          "urgencyFlag": "routine",
+          "generatedAt": "2026-08-18T05:12:09.602Z",
+          "model": "skinlink-derm-vision-1 (simulated)"
+        }
+      },
+      {
+        "id": "c_1bfea36e",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1003",
+        "patientId": "p_e7bb5f93",
+        "clinicianId": "u_neema",
+        "specialistId": "u_amina",
+        "primaryConcern": "currenty burn skin",
+        "clinicalInfo": "additional",
+        "durationDays": 3,
+        "suspectedCondition": "rasheasskin",
+        "status": "follow_up",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_db32417e",
+            "url": "http://127.0.0.1:8000/uploads/599cb483e7184afcb9a3df0c8f484a52.png",
+            "angle": "Overview",
+            "quality": "good",
+            "qualityScore": 85,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-15T09:47:16.158962+00:00"
+          },
+          {
+            "id": "img_f3af6977",
+            "url": "http://127.0.0.1:8000/uploads/bd968adcaa4343a8b22211b5c8e8858d.png",
+            "angle": "Close-up",
+            "quality": "good",
+            "qualityScore": 85,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-15T09:47:16.158962+00:00"
+          },
+          {
+            "id": "img_76208d46",
+            "url": "http://127.0.0.1:8000/uploads/30e18b4797ce4a1fa5730ea7555aef3c.png",
+            "angle": "Macro",
+            "quality": "good",
+            "qualityScore": 85,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-15T09:47:16.158962+00:00"
+          }
+        ],
+        "notes": [
+          {
+            "id": "n_7e28a796",
+            "authorId": "u_neema",
+            "authorName": "Neema Joseph",
+            "body": "ok aisee",
+            "createdAt": "2026-08-15T10:52:20.441235+00:00"
+          },
+          {
+            "id": "n_5e0cfa84",
+            "authorId": "u_amina",
+            "authorName": "Dr. Amina Hassan",
+            "body": "Requested additional well-lit images from the clinic before assessment can be completed.",
+            "createdAt": "2026-08-15T10:57:56.445606+00:00"
+          },
+          {
+            "id": "n_b14158ac",
+            "authorId": "u_amina",
+            "authorName": "Dr. Amina Hassan",
+            "body": "[Specialist Follow-Up Response] Action: ADJUST_REGIMEN \u2014 now change medication",
+            "createdAt": "2026-08-17T05:54:27.875489+00:00"
+          },
+          {
+            "id": "n_cc938821",
+            "authorId": "u_amina",
+            "authorName": "Dr. Amina Hassan",
+            "body": "Requested additional well-lit images from the clinic before assessment can be completed.",
+            "createdAt": "2026-08-17T06:18:26.177376+00:00"
+          }
+        ],
+        "createdAt": "2026-08-15T09:47:16.158962+00:00",
+        "updatedAt": "2026-08-17T08:55:29.493892+00:00",
+        "bodySite": "face",
+        "previousTreatment": "none",
+        "redFlags": [],
+        "ai": {
+          "imageQualityAverage": 91,
+          "imageQualityFlags": [],
+          "differentials": [
+            {
+              "condition": "Nonspecific Dermatitis",
+              "probability": 58,
+              "confidence": "Moderate",
+              "rationale": "Features are nonspecific; correlate clinically."
+            },
+            {
+              "condition": "Fungal Infection (tinea)",
+              "probability": 41,
+              "confidence": "Moderate",
+              "rationale": "Consider if annular/scaly; a skin scraping may help."
+            },
+            {
+              "condition": "Contact Reaction",
+              "probability": 30,
+              "confidence": "Low",
+              "rationale": "Possible localized allergen/irritant exposure."
+            }
+          ],
+          "recommendedAction": "Insufficient specificity \u2014 recommend additional well-lit images and clinical correlation.",
+          "urgencyFlag": "routine",
+          "generatedAt": "2026-08-17T08:55:28.737Z",
+          "model": "skinlink-derm-vision-1 (simulated)"
+        },
+        "treatmentPlan": {
+          "diagnosis": "rasheasskin",
+          "medications": [
+            {
+              "name": "medication",
+              "instructions": "dose 3"
+            }
+          ],
+          "patientEducation": [
+            "apply bathring after bath"
+          ],
+          "avoidTriggers": [
+            "avoid pain soap"
+          ],
+          "followUpDays": 6,
+          "notes": "make goog follow up to patient",
+          "id": "tp_1786791714521",
+          "createdById": "u_amina",
+          "createdAt": "2026-08-15T11:01:54.521Z"
+        },
+        "followUpReport": {
+          "id": "fur_1786950255769",
+          "caseId": "c_1bfea36e",
+          "response": "improved",
+          "adherence": "full",
+          "symptoms": "Patient reported symptomatic change.",
+          "notes": "",
+          "progressPhotoUrl": null,
+          "worsening": false,
+          "submittedAt": "2026-08-17T00:04:15.769",
+          "submittedByName": "Neema Joseph",
+          "specialistFeedback": "now change medication",
+          "specialistAction": "adjust_regimen",
+          "respondedAt": "2026-08-17T05:54:27.537Z"
+        }
+      },
+      {
+        "id": "c_f607b683",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2026-1002",
+        "patientId": "p_294c90fa",
+        "clinicianId": "u_neema",
+        "specialistId": null,
+        "primaryConcern": "Facial rash and redness",
+        "clinicalInfo": "patient record itchet in 1 week",
+        "durationDays": 7,
+        "suspectedCondition": "Contact Dermatitis",
+        "status": "new",
+        "priority": "routine",
+        "images": [
+          {
+            "id": "img_41fa4e17",
+            "url": "http://127.0.0.1:8000/uploads/d44d40b3dd08473f9a871caf3431c902.png",
+            "angle": "Overview",
+            "quality": "good",
+            "qualityScore": 85,
+            "qualityNotes": null,
+            "capturedAt": "2026-08-14T08:07:53.687613+00:00"
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-14T08:07:53.687613+00:00",
+        "updatedAt": "2026-08-17T06:43:49.048629+00:00",
+        "bodySite": "Face / Cheeks",
+        "previousTreatment": "over the counter cream",
+        "redFlags": [
+          "Clinical red flag reported"
+        ],
+        "ai": {
+          "imageQualityAverage": 74,
+          "imageQualityFlags": [
+            "Only one image \u2014 additional angles recommended for confident assessment"
+          ],
+          "differentials": [
+            {
+              "condition": "Atopic Dermatitis",
+              "probability": 78,
+              "confidence": "High",
+              "rationale": "Symmetric, itchy, ill-defined erythematous patches consistent with atopic pattern."
+            },
+            {
+              "condition": "Allergic Contact Dermatitis",
+              "probability": 54,
+              "confidence": "Moderate",
+              "rationale": "Localized distribution could indicate contact allergen exposure."
+            },
+            {
+              "condition": "Psoriasis (plaque)",
+              "probability": 21,
+              "confidence": "Low",
+              "rationale": "Lacks well-demarcated silvery scale typical of plaque psoriasis."
+            }
+          ],
+          "recommendedAction": "Suitable for teledermatology management. Recommend topical corticosteroid trial and review.",
+          "urgencyFlag": "routine",
+          "generatedAt": "2026-08-17T06:43:48.242Z",
+          "model": "skinlink-derm-vision-1 (simulated)"
+        }
+      },
+      {
+        "id": "c_0891",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2024-0891",
+        "patientId": "p_fatuma",
+        "clinicianId": "u_neema",
+        "specialistId": "u_amina",
+        "primaryConcern": "Itchy rash on forearm",
+        "clinicalInfo": "Itchy rash on forearm, present for 2 days. No fever.",
+        "durationDays": 2,
+        "suspectedCondition": "Suspected Eczema",
+        "status": "new",
+        "priority": "routine",
+        "bodySite": "Forearm",
+        "images": [
+          {
+            "id": "img_1",
+            "url": "/uploads/sample/eczema-close-up.png",
+            "angle": "Close-up",
+            "quality": "good",
+            "qualityScore": 92,
+            "capturedAt": "2026-08-14T05:37:25.308256+00:00"
+          },
+          {
+            "id": "img_2",
+            "url": "/uploads/sample/arm-wide.png",
+            "angle": "Overview",
+            "quality": "good",
+            "qualityScore": 88,
+            "capturedAt": "2026-08-14T05:37:25.308256+00:00"
+          }
+        ],
+        "notes": [],
+        "createdAt": "2026-08-14T05:37:25.308256+00:00",
+        "updatedAt": "2026-08-14T05:37:25.308256+00:00"
+      },
+      {
+        "id": "c_reviewed",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2024-0850",
+        "patientId": "p_juma",
+        "clinicianId": "u_neema",
+        "specialistId": "u_amina",
+        "primaryConcern": "Chronic dermatitis flare",
+        "clinicalInfo": "Patient reports worsening over 1 week.",
+        "durationDays": 7,
+        "suspectedCondition": "Atopic Dermatitis",
+        "status": "follow_up",
+        "priority": "routine",
+        "bodySite": "Lower leg",
+        "images": [
+          {
+            "id": "img_3",
+            "url": "/uploads/sample/dermatitis.png",
+            "angle": "Close-up",
+            "quality": "good",
+            "qualityScore": 90,
+            "capturedAt": "2026-08-11T07:37:25.308256+00:00"
+          }
+        ],
+        "treatmentPlan": {
+          "id": "tp_1",
+          "diagnosis": "Atopic Dermatitis",
+          "medications": [
+            {
+              "name": "Topical corticosteroid",
+              "instructions": "Apply twice daily for 2 weeks"
+            },
+            {
+              "name": "Emollient moisturizer",
+              "instructions": "Use daily as needed"
+            }
+          ],
+          "patientEducation": [
+            "Avoid known triggers",
+            "Keep skin moisturized"
+          ],
+          "avoidTriggers": [
+            "Harsh soaps",
+            "Wool clothing"
+          ],
+          "followUpDays": 14,
+          "notes": "Return sooner if worsening or new symptoms.",
+          "createdById": "u_amina",
+          "createdAt": "2026-08-13T07:37:25.308256+00:00"
+        },
+        "notes": [
+          {
+            "id": "n_1",
+            "authorId": "u_amina",
+            "authorName": "Dr. Amina Hassan",
+            "body": "Suitable for remote management. Topical therapy recommended.",
+            "createdAt": "2026-08-13T07:37:25.308256+00:00"
+          }
+        ],
+        "createdAt": "2026-08-09T07:37:25.308256+00:00",
+        "updatedAt": "2026-08-14T10:35:23.114753+00:00"
+      }
+    ],
+    "referrals": [
+      {
+        "id": "r_61b7da6b",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-18T05:29:34.506163+00:00",
+        "ref": "REF-2026-1009",
+        "caseId": "c_e1a09e15",
+        "patientName": "mussa kimawa",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "routine"
+      },
+      {
+        "id": "r_cd81e239",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-17T09:38:30.636810+00:00",
+        "ref": "REF-2026-1008",
+        "caseId": "c_096ca9b1",
+        "patientName": "Test Dedup",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "routine"
+      },
+      {
+        "id": "r_becbad43",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-17T09:36:11.625454+00:00",
+        "ref": "REF-2026-1007",
+        "caseId": "c_69edc654",
+        "patientName": "Fatuma K.",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "routine"
+      },
+      {
+        "id": "r_137c8365",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-17T09:35:51.271831+00:00",
+        "ref": "REF-2026-1006",
+        "caseId": "c_d0a98aea",
+        "patientName": "anet muddy",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "urgent"
+      },
+      {
+        "id": "r_4cbc8acf",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-17T09:35:43.899743+00:00",
+        "ref": "REF-2026-1005",
+        "caseId": "c_fd265f4e",
+        "patientName": "anet muddy",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "urgent"
+      },
+      {
+        "id": "r_cc8a305a",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-17T09:06:27.827892+00:00",
+        "ref": "REF-2026-1004",
+        "caseId": "c_f02e0948",
+        "patientName": "amili amini",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "urgent"
+      },
+      {
+        "id": "r_c4dce19a",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-15T09:47:16.214441+00:00",
+        "ref": "REF-2026-1003",
+        "caseId": "c_1bfea36e",
+        "patientName": "amali abbakari",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "responded",
+        "priority": "routine",
+        "respondedAt": "2026-08-15T10:53:28.780516+00:00"
+      },
+      {
+        "id": "r_cdad716b",
+        "tenantId": "t_mwanza",
+        "createdAt": "2026-08-14T08:07:53.691411+00:00",
+        "ref": "REF-2026-1002",
+        "caseId": "c_f607b683",
+        "patientName": "Janet Musa",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "routine"
+      },
+      {
+        "id": "r_1",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2024-0891",
+        "caseId": "c_0891",
+        "patientName": "Fatuma K.",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "pending",
+        "priority": "routine",
+        "createdAt": "2026-08-14T05:37:25.308256+00:00"
+      },
+      {
+        "id": "r_2",
+        "tenantId": "t_mwanza",
+        "ref": "REF-2024-0850",
+        "caseId": "c_reviewed",
+        "patientName": "Juma A.",
+        "fromClinic": "Mwanza Regional Health Network",
+        "status": "responded",
+        "priority": "routine",
+        "createdAt": "2026-08-09T07:37:25.308256+00:00",
+        "respondedAt": "2026-08-13T07:37:25.308256+00:00"
+      }
+    ],
+    "followUps": [
+      {
+        "id": "f_a7d887f3",
+        "tenantId": "t_mwanza",
+        "caseId": "c_1bfea36e",
+        "caseRef": "REF-2026-1003",
+        "patientName": "amali abbakari",
+        "scheduledFor": "2026-08-21T11:01:54.523Z",
+        "purpose": "Review rasheasskin progress & adjust treatment",
+        "status": "completed",
+        "outcome": "Response: improved | Adherence: full\n",
+        "followUpReport": {
+          "id": "fur_1786950255769",
+          "caseId": "c_1bfea36e",
+          "response": "improved",
+          "adherence": "full",
+          "symptoms": "Patient reported symptomatic change.",
+          "notes": "",
+          "progressPhotoUrl": null,
+          "worsening": false,
+          "submittedAt": "2026-08-17T00:04:15.769",
+          "submittedByName": "Neema Joseph"
+        }
+      },
+      {
+        "id": "f_1",
+        "tenantId": "t_mwanza",
+        "caseId": "c_reviewed",
+        "caseRef": "REF-2024-0850",
+        "patientName": "Juma A.",
+        "scheduledFor": "2026-08-21T07:37:25.308256+00:00",
+        "status": "completed",
+        "purpose": "7-day treatment response check",
+        "outcome": "Response: mild_improvement | Adherence: stopped_adverse\nhush\n\u26a0 RED FLAG: Deterioration flagged for urgent specialist re-triage"
+      }
+    ],
+    "resources": [
+      {
+        "id": "res_1",
+        "tenantId": "t_mwanza",
+        "title": "Eczema care guide",
+        "category": "Patient Education",
+        "type": "PDF",
+        "description": "Printable patient handout for atopic dermatitis care.",
+        "updatedAt": "2026-07-15T07:37:25.308256+00:00"
+      },
+      {
+        "id": "res_2",
+        "tenantId": "t_mwanza",
+        "title": "Image capture best practices",
+        "category": "Clinical Protocol",
+        "type": "Protocol",
+        "description": "How to take clear lesion photos from multiple angles.",
+        "updatedAt": "2026-06-15T07:37:25.308256+00:00"
+      }
+    ],
+    "aiAuditTrail": [
+      {
+        "id": "ai_717be53d",
+        "createdAt": "2026-08-18T05:30:19.775142+00:00",
+        "caseId": "c_e1a09e15",
+        "requestType": "skin_assessment",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-18T05:30:19.775142+00:00",
+        "imageIds": [
+          "img_18ea56fb"
+        ],
+        "clinicalInput": {
+          "patient_age": 28,
+          "sex": "male",
+          "symptoms": [],
+          "duration": null,
+          "duration_days": 6,
+          "body_site": "face",
+          "severity": null,
+          "previous_treatment": "none",
+          "treatment_response": null,
+          "adherence": null,
+          "red_flags": [],
+          "primary_concern": "redness",
+          "clinical_info": "i week pain",
+          "case_id": "c_e1a09e15"
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-18T05:30:19.764611+00:00"
+        }
+      },
+      {
+        "id": "ai_bff9878e",
+        "createdAt": "2026-08-18T05:30:16.818516+00:00",
+        "caseId": "c_e1a09e15",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-18T05:30:16.818516+00:00",
+        "imageIds": [
+          "img_18ea56fb"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 67,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_18ea56fb",
+                "url": "http://127.0.0.1:8000/uploads/50282c62796942368e5e47f4f362f20d.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 67,
+                "issues": [
+                  "Uneven lighting or shadow present"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_18ea56fb",
+              "url": "http://127.0.0.1:8000/uploads/50282c62796942368e5e47f4f362f20d.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_1f4a113c",
+        "createdAt": "2026-08-17T09:38:33.458490+00:00",
+        "caseId": "c_096ca9b1",
+        "requestType": "skin_assessment",
+        "aiModel": "skinlink-fallback (encode-fail), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:38:33.458490+00:00",
+        "imageIds": [
+          "img_faac5ded"
+        ],
+        "clinicalInput": {
+          "patient_age": 32,
+          "sex": "male",
+          "symptoms": [],
+          "duration": null,
+          "duration_days": 7,
+          "body_site": "Face",
+          "severity": null,
+          "previous_treatment": null,
+          "treatment_response": null,
+          "adherence": null,
+          "red_flags": [],
+          "primary_concern": "Acne flare on cheek",
+          "clinical_info": "On chin and cheeks x 1 week no fever",
+          "case_id": "c_096ca9b1"
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 75
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Acne Vulgaris (inflammatory)",
+              "likelihood": "probable",
+              "probability": 82,
+              "rationale": "Inflammatory papules/pustules consistent with acne distribution."
+            },
+            {
+              "condition": "Folliculitis",
+              "likelihood": "possible",
+              "probability": 38,
+              "rationale": "Follicular-based pustules possible; differentiate by distribution."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+          "generated_at": "2026-08-17T09:38:33.445500+00:00"
+        }
+      },
+      {
+        "id": "ai_4386de70",
+        "createdAt": "2026-08-17T09:38:33.434267+00:00",
+        "caseId": "c_096ca9b1",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (encode-fail), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:38:33.434267+00:00",
+        "imageIds": [
+          "img_faac5ded"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Close-up"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 75,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_faac5ded",
+                "url": "/uploads/sample/dermatitis.png",
+                "angle": "Close-up",
+                "rating": "acceptable",
+                "score": 75,
+                "issues": [],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_faac5ded",
+              "url": "/uploads/sample/dermatitis.png",
+              "angle": "Close-up",
+              "rating": "acceptable",
+              "score": 75,
+              "issues": [],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_be711a6b",
+        "createdAt": "2026-08-17T09:36:11.715679+00:00",
+        "caseId": "c_69edc654",
+        "requestType": "skin_assessment",
+        "aiModel": "skinlink-fallback (encode-fail), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:11.715679+00:00",
+        "imageIds": [
+          "img_0cb0f3a7",
+          "img_ccb3e0e7"
+        ],
+        "clinicalInput": {
+          "patient_age": 45,
+          "sex": "female",
+          "symptoms": [],
+          "duration": null,
+          "duration_days": 3,
+          "body_site": "Wrist",
+          "severity": null,
+          "previous_treatment": null,
+          "treatment_response": null,
+          "adherence": null,
+          "red_flags": [],
+          "primary_concern": "Rash on wrist",
+          "clinical_info": "Mild itching 3 days",
+          "case_id": "c_69edc654"
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Possible motion blur detected \u2014 consider retaking"
+            ],
+            "score": 65
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Atopic Dermatitis",
+              "likelihood": "probable",
+              "probability": 76,
+              "rationale": "Itchy erythematous patches in typical flexural distribution pattern."
+            },
+            {
+              "condition": "Allergic Contact Dermatitis",
+              "likelihood": "possible",
+              "probability": 48,
+              "rationale": "Localized pattern could indicate contact allergen exposure."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "moderate",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (encode-fail), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:11.697557+00:00"
+        }
+      },
+      {
+        "id": "ai_cfcb0760",
+        "createdAt": "2026-08-17T09:36:11.677741+00:00",
+        "caseId": "c_69edc654",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (encode-fail), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:11.677741+00:00",
+        "imageIds": [
+          "img_0cb0f3a7",
+          "img_ccb3e0e7"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Close-up",
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 65,
+            "checked_images": 2,
+            "total_images": 2,
+            "per_image": [
+              {
+                "imageId": "img_0cb0f3a7",
+                "url": "/uploads/sample/eczema-close-up.png",
+                "angle": "Close-up",
+                "rating": "acceptable",
+                "score": 65,
+                "issues": [
+                  "Possible motion blur detected \u2014 consider retaking"
+                ],
+                "retakeRequired": false
+              },
+              {
+                "imageId": "img_ccb3e0e7",
+                "url": "/uploads/sample/arm-wide.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 65,
+                "issues": [
+                  "Possible motion blur detected \u2014 consider retaking"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_0cb0f3a7",
+              "url": "/uploads/sample/eczema-close-up.png",
+              "angle": "Close-up",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            },
+            {
+              "imageId": "img_ccb3e0e7",
+              "url": "/uploads/sample/arm-wide.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_c4f5e285",
+        "createdAt": "2026-08-17T09:36:11.646950+00:00",
+        "caseId": "c_69edc654",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (encode-fail), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:11.646950+00:00",
+        "imageIds": [
+          "img_0cb0f3a7",
+          "img_ccb3e0e7"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Close-up",
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 65,
+            "checked_images": 2,
+            "total_images": 2,
+            "per_image": [
+              {
+                "imageId": "img_0cb0f3a7",
+                "url": "/uploads/sample/eczema-close-up.png",
+                "angle": "Close-up",
+                "rating": "acceptable",
+                "score": 65,
+                "issues": [
+                  "Possible motion blur detected \u2014 consider retaking"
+                ],
+                "retakeRequired": false
+              },
+              {
+                "imageId": "img_ccb3e0e7",
+                "url": "/uploads/sample/arm-wide.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 65,
+                "issues": [
+                  "Possible motion blur detected \u2014 consider retaking"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_0cb0f3a7",
+              "url": "/uploads/sample/eczema-close-up.png",
+              "angle": "Close-up",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            },
+            {
+              "imageId": "img_ccb3e0e7",
+              "url": "/uploads/sample/arm-wide.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 65,
+              "issues": [
+                "Possible motion blur detected \u2014 consider retaking"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_03771a2f",
+        "createdAt": "2026-08-17T09:36:09.965542+00:00",
+        "caseId": "c_fd265f4e",
+        "requestType": "skin_assessment",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:09.965542+00:00",
+        "imageIds": [
+          "img_51ae346c"
+        ],
+        "clinicalInput": {
+          "patient_age": 28,
+          "sex": "female",
+          "symptoms": [],
+          "duration": null,
+          "duration_days": 7,
+          "body_site": "face",
+          "severity": null,
+          "previous_treatment": "non",
+          "treatment_response": null,
+          "adherence": null,
+          "red_flags": [
+            "Clinical red flag reported"
+          ],
+          "primary_concern": "facial",
+          "clinical_info": "patient said , i fee pain",
+          "case_id": "c_fd265f4e"
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:09.957547+00:00"
+        }
+      },
+      {
+        "id": "ai_3e90ba29",
+        "createdAt": "2026-08-17T09:36:08.967004+00:00",
+        "caseId": "c_d0a98aea",
+        "requestType": "skin_assessment",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:08.967004+00:00",
+        "imageIds": [
+          "img_7e9dd191"
+        ],
+        "clinicalInput": {
+          "patient_age": 28,
+          "sex": "female",
+          "symptoms": [],
+          "duration": null,
+          "duration_days": 7,
+          "body_site": "face",
+          "severity": null,
+          "previous_treatment": "non",
+          "treatment_response": null,
+          "adherence": null,
+          "red_flags": [
+            "Clinical red flag reported"
+          ],
+          "primary_concern": "facial",
+          "clinical_info": "patient said , i fee pain",
+          "case_id": "c_d0a98aea"
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "image_quality": {
+            "rating": "acceptable",
+            "focus": true,
+            "lighting": true,
+            "lesion_visible": true,
+            "required_angles_present": true,
+            "issues": [
+              "Uneven lighting or shadow present",
+              "Only one image provided \u2014 additional angles recommended"
+            ],
+            "score": 67
+          },
+          "observations": [
+            "Dermatological lesion present",
+            "Clinical correlation required"
+          ],
+          "possible_conditions": [
+            {
+              "condition": "Nonspecific Dermatological Presentation",
+              "likelihood": "possible",
+              "probability": 58,
+              "rationale": "Clinical and morphological features non-specific without additional angles/history."
+            },
+            {
+              "condition": "Inflammatory Dermatosis",
+              "likelihood": "possible",
+              "probability": 45,
+              "rationale": "Erythema and textural change suggest inflammatory etiology."
+            }
+          ],
+          "urgency": "routine",
+          "missing_information": [
+            "Additional clinical angles or close-up view"
+          ],
+          "red_flags_detected": false,
+          "detected_red_flags": [],
+          "suggested_next_step": "specialist_review",
+          "confidence": "low",
+          "disclaimer": "AI assistance only; specialist confirmation required.",
+          "model": "skinlink-fallback (api-error), model=gpt-4o",
+          "generated_at": "2026-08-17T09:36:08.960008+00:00"
+        }
+      },
+      {
+        "id": "ai_2a8d38be",
+        "createdAt": "2026-08-17T09:36:06.972463+00:00",
+        "caseId": "c_fd265f4e",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:06.972463+00:00",
+        "imageIds": [
+          "img_51ae346c"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 67,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_51ae346c",
+                "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 67,
+                "issues": [
+                  "Uneven lighting or shadow present"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_51ae346c",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_189ce480",
+        "createdAt": "2026-08-17T09:36:05.284651+00:00",
+        "caseId": "c_d0a98aea",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:05.283650+00:00",
+        "imageIds": [
+          "img_7e9dd191"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 67,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_7e9dd191",
+                "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 67,
+                "issues": [
+                  "Uneven lighting or shadow present"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_7e9dd191",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_35039c4c",
+        "createdAt": "2026-08-17T09:36:04.003784+00:00",
+        "caseId": "c_fd265f4e",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:04.002785+00:00",
+        "imageIds": [
+          "img_51ae346c"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 67,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_51ae346c",
+                "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 67,
+                "issues": [
+                  "Uneven lighting or shadow present"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_51ae346c",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_49bf18bf",
+        "createdAt": "2026-08-17T09:36:02.307411+00:00",
+        "caseId": "c_d0a98aea",
+        "requestType": "image_quality_check",
+        "aiModel": "skinlink-fallback (api-error), model=gpt-4o",
+        "requestTimestamp": "2026-08-17T09:36:02.307411+00:00",
+        "imageIds": [
+          "img_7e9dd191"
+        ],
+        "clinicalInput": {
+          "required_angles": [],
+          "angles_present": [
+            "Overview"
+          ]
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "summary": {
+            "pass": true,
+            "retake_required": false,
+            "overall_score": 67,
+            "checked_images": 1,
+            "total_images": 1,
+            "per_image": [
+              {
+                "imageId": "img_7e9dd191",
+                "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+                "angle": "Overview",
+                "rating": "acceptable",
+                "score": 67,
+                "issues": [
+                  "Uneven lighting or shadow present"
+                ],
+                "retakeRequired": false
+              }
+            ]
+          },
+          "perImage": [
+            {
+              "imageId": "img_7e9dd191",
+              "url": "http://127.0.0.1:8000/uploads/2ce65dfad5d54cbcad47cc9080bd5ccd.png",
+              "angle": "Overview",
+              "rating": "acceptable",
+              "score": 67,
+              "issues": [
+                "Uneven lighting or shadow present"
+              ],
+              "retakeRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "id": "ai_e0103d00",
+        "createdAt": "2026-08-17T08:38:50.605715+00:00",
+        "caseId": "c_test123",
+        "requestType": "skin_assessment",
+        "aiModel": "test-model",
+        "requestTimestamp": "2026-01-01T00:00:00Z",
+        "imageIds": [
+          "img_1",
+          "img_2"
+        ],
+        "clinicalInput": {
+          "primary_concern": "itchy red rash on arm",
+          "clinical_info": "Patient reports 2 weeks of itching",
+          "patient_age": 34,
+          "body_site": "left forearm",
+          "duration_days": 14,
+          "symptoms": [
+            "redness",
+            "itching"
+          ],
+          "previous_treatment": "topical cream",
+          "severity": "moderate",
+          "red_flags": []
+        },
+        "clinicalInputVersion": "1.0",
+        "aiOutput": {
+          "urgency": "routine"
+        }
+      }
+    ],
+    "specialistReviews": [
+      {
+        "id": "sr_108f878a",
+        "specialistId": "u_specialist",
+        "finalDecisionTimestamp": "2026-08-17T08:38:50.611655+00:00",
+        "caseId": "c_test123",
+        "finalAssessment": "Atopic dermatitis",
+        "finalCondition": "Atopic Dermatitis",
+        "clinicalAction": "adjust_regimen"
+      }
+    ]
+  },
+  "credentials": {
+    "ops@skinlink.io": "platform123",
+    "amina@mwanzahealth.org": "clinic123",
+    "daniel@mwanzahealth.org": "clinic123",
+    "neema@mwanzahealth.org": "clinic123",
+    "joseph@mtwaracoastal.org": "clinic123"
+  },
+  "drafts": {
+    "u_neema": [
+      {
+        "id": "bf3482bb-1c59-44b1-a275-8f04aca67e86",
+        "step": 0,
+        "patient": {
+          "mode": "new",
+          "existingId": null,
+          "fullName": "anet",
+          "age": 28,
+          "gender": "Female",
+          "village": "Arusha",
+          "phone": "",
+          "consent": true
+        },
+        "images": [],
+        "clinical": {
+          "primaryConcern": "",
+          "clinicalInfo": "",
+          "durationDays": 7,
+          "suspectedCondition": "",
+          "bodySite": "",
+          "previousTreatment": "",
+          "priority": "routine",
+          "redFlags": []
+        },
+        "updatedAt": "2026-08-17T07:05:01.884889+00:00"
+      }
+    ]
+  }
+}
